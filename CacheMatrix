@@ -1,3 +1,5 @@
+    
+## Part 1 - Make the cache matrix
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -12,6 +14,8 @@ makeCacheMatrix <- function(x = matrix()) {
          setinverse = setinverse,
          getinverse = getinverse)
 }
+
+## Part 2 - solve the cache matrix
 
 cachesolve <- function(x, ...) {
     inv <- x$getinverse()
