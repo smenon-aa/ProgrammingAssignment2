@@ -1,6 +1,11 @@
-    
-## Part 1 - Make the cache matrix
 
+## Part 1 - Make the cache matrix
+    
+## set: Input matrix 
+## get: the matrix
+## setinverse: obtains inverse of the matrix 
+## getinverse: gets inverse     
+    
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
     set <- function(y) {
@@ -15,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
          getinverse = getinverse)
 }
 
-## Part 2 - solve the cache matrix
+## Part 2 - solve the cache matrix 
+# Matrix Inverse not in cache - so have to compute it fresh
 
 cachesolve <- function(x, ...) {
     inv <- x$getinverse()
